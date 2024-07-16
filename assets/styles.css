@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000; /* Czarny */
+  color: #fff; /* Biały */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #000; /* Czarny */
+  color: #D4AF37; /* Brudny złoty */
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #D4AF37; /* Brudny złoty */
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #D4AF37; /* Brudny złoty */
+}
+
+p {
+  color: #fff; /* Biały */
+}
+
+/* Dodanie stylów dla przycisków */
+button {
+  background-color: #D4AF37; /* Brudny złoty */
+  color: #000; /* Czarny */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b08d2b; /* Ciemniejszy odcień brudnego złota */
+}
+
+/* Stylizacja formularzy */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #D4AF37; /* Brudny złoty */
+  border-radius: 5px;
+  background-color: #000; /* Czarny */
+  color: #fff; /* Biały */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #D4AF37; /* Brudny złoty */
+}
+
+/* Stylizacja kart w galerii */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33% - 20px);
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.gallery-item p {
+  margin-top: 10px;
+}
+/* Dodaj animacje */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.service-card {
+  animation: fadeIn 0.5s ease-in-out;
+}
